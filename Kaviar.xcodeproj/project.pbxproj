@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FFE85C271CEA7E3100923B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C261CEA7E3100923B24 /* main.m */; };
+		FFE85C2A1CEA7E3100923B24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C291CEA7E3100923B24 /* AppDelegate.m */; };
+		FFE85C2D1CEA7E3100923B24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C2C1CEA7E3100923B24 /* ViewController.m */; };
+		FFE85C301CEA7E3200923B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE85C2E1CEA7E3200923B24 /* Main.storyboard */; };
+		FFE85C321CEA7E3200923B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE85C311CEA7E3200923B24 /* Assets.xcassets */; };
+		FFE85C351CEA7E3200923B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE85C331CEA7E3200923B24 /* LaunchScreen.storyboard */; };
+		FFE85C401CEA7E3200923B24 /* KaviarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C3F1CEA7E3200923B24 /* KaviarTests.m */; };
+		FFE85C4B1CEA7E3200923B24 /* KaviarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C4A1CEA7E3200923B24 /* KaviarUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFE85C3C1CEA7E3200923B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFE85C1A1CEA7E3100923B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFE85C211CEA7E3100923B24;
+			remoteInfo = Kaviar;
+		};
+		FFE85C471CEA7E3200923B24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFE85C1A1CEA7E3100923B24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFE85C211CEA7E3100923B24;
+			remoteInfo = Kaviar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FFE85C221CEA7E3100923B24 /* Kaviar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaviar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE85C261CEA7E3100923B24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFE85C281CEA7E3100923B24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFE85C291CEA7E3100923B24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFE85C2B1CEA7E3100923B24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FFE85C2C1CEA7E3100923B24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FFE85C2F1CEA7E3200923B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FFE85C311CEA7E3200923B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FFE85C341CEA7E3200923B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FFE85C361CEA7E3200923B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE85C3B1CEA7E3200923B24 /* KaviarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaviarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE85C3F1CEA7E3200923B24 /* KaviarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaviarTests.m; sourceTree = "<group>"; };
+		FFE85C411CEA7E3200923B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE85C461CEA7E3200923B24 /* KaviarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaviarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFE85C4A1CEA7E3200923B24 /* KaviarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaviarUITests.m; sourceTree = "<group>"; };
+		FFE85C4C1CEA7E3200923B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FFE85C1F1CEA7E3100923B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE85C381CEA7E3200923B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE85C431CEA7E3200923B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FFE85C191CEA7E3100923B24 = {
+			isa = PBXGroup;
+			children = (
+				FFE85C241CEA7E3100923B24 /* Kaviar */,
+				FFE85C3E1CEA7E3200923B24 /* KaviarTests */,
+				FFE85C491CEA7E3200923B24 /* KaviarUITests */,
+				FFE85C231CEA7E3100923B24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FFE85C231CEA7E3100923B24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FFE85C221CEA7E3100923B24 /* Kaviar.app */,
+				FFE85C3B1CEA7E3200923B24 /* KaviarTests.xctest */,
+				FFE85C461CEA7E3200923B24 /* KaviarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFE85C241CEA7E3100923B24 /* Kaviar */ = {
+			isa = PBXGroup;
+			children = (
+				FFE85C281CEA7E3100923B24 /* AppDelegate.h */,
+				FFE85C291CEA7E3100923B24 /* AppDelegate.m */,
+				FFE85C2B1CEA7E3100923B24 /* ViewController.h */,
+				FFE85C2C1CEA7E3100923B24 /* ViewController.m */,
+				FFE85C2E1CEA7E3200923B24 /* Main.storyboard */,
+				FFE85C311CEA7E3200923B24 /* Assets.xcassets */,
+				FFE85C331CEA7E3200923B24 /* LaunchScreen.storyboard */,
+				FFE85C361CEA7E3200923B24 /* Info.plist */,
+				FFE85C251CEA7E3100923B24 /* Supporting Files */,
+			);
+			path = Kaviar;
+			sourceTree = "<group>";
+		};
+		FFE85C251CEA7E3100923B24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFE85C261CEA7E3100923B24 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFE85C3E1CEA7E3200923B24 /* KaviarTests */ = {
+			isa = PBXGroup;
+			children = (
+				FFE85C3F1CEA7E3200923B24 /* KaviarTests.m */,
+				FFE85C411CEA7E3200923B24 /* Info.plist */,
+			);
+			path = KaviarTests;
+			sourceTree = "<group>";
+		};
+		FFE85C491CEA7E3200923B24 /* KaviarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FFE85C4A1CEA7E3200923B24 /* KaviarUITests.m */,
+				FFE85C4C1CEA7E3200923B24 /* Info.plist */,
+			);
+			path = KaviarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FFE85C211CEA7E3100923B24 /* Kaviar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE85C4F1CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "Kaviar" */;
+			buildPhases = (
+				FFE85C1E1CEA7E3100923B24 /* Sources */,
+				FFE85C1F1CEA7E3100923B24 /* Frameworks */,
+				FFE85C201CEA7E3100923B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kaviar;
+			productName = Kaviar;
+			productReference = FFE85C221CEA7E3100923B24 /* Kaviar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FFE85C3A1CEA7E3200923B24 /* KaviarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE85C521CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "KaviarTests" */;
+			buildPhases = (
+				FFE85C371CEA7E3200923B24 /* Sources */,
+				FFE85C381CEA7E3200923B24 /* Frameworks */,
+				FFE85C391CEA7E3200923B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFE85C3D1CEA7E3200923B24 /* PBXTargetDependency */,
+			);
+			name = KaviarTests;
+			productName = KaviarTests;
+			productReference = FFE85C3B1CEA7E3200923B24 /* KaviarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FFE85C451CEA7E3200923B24 /* KaviarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFE85C551CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "KaviarUITests" */;
+			buildPhases = (
+				FFE85C421CEA7E3200923B24 /* Sources */,
+				FFE85C431CEA7E3200923B24 /* Frameworks */,
+				FFE85C441CEA7E3200923B24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFE85C481CEA7E3200923B24 /* PBXTargetDependency */,
+			);
+			name = KaviarUITests;
+			productName = KaviarUITests;
+			productReference = FFE85C461CEA7E3200923B24 /* KaviarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FFE85C1A1CEA7E3100923B24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Institute of Systems Biology";
+				TargetAttributes = {
+					FFE85C211CEA7E3100923B24 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FFE85C3A1CEA7E3200923B24 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FFE85C211CEA7E3100923B24;
+					};
+					FFE85C451CEA7E3200923B24 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FFE85C211CEA7E3100923B24;
+					};
+				};
+			};
+			buildConfigurationList = FFE85C1D1CEA7E3100923B24 /* Build configuration list for PBXProject "Kaviar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FFE85C191CEA7E3100923B24;
+			productRefGroup = FFE85C231CEA7E3100923B24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FFE85C211CEA7E3100923B24 /* Kaviar */,
+				FFE85C3A1CEA7E3200923B24 /* KaviarTests */,
+				FFE85C451CEA7E3200923B24 /* KaviarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FFE85C201CEA7E3100923B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE85C351CEA7E3200923B24 /* LaunchScreen.storyboard in Resources */,
+				FFE85C321CEA7E3200923B24 /* Assets.xcassets in Resources */,
+				FFE85C301CEA7E3200923B24 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE85C391CEA7E3200923B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE85C441CEA7E3200923B24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FFE85C1E1CEA7E3100923B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE85C2D1CEA7E3100923B24 /* ViewController.m in Sources */,
+				FFE85C2A1CEA7E3100923B24 /* AppDelegate.m in Sources */,
+				FFE85C271CEA7E3100923B24 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE85C371CEA7E3200923B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE85C401CEA7E3200923B24 /* KaviarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFE85C421CEA7E3200923B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE85C4B1CEA7E3200923B24 /* KaviarUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FFE85C3D1CEA7E3200923B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFE85C211CEA7E3100923B24 /* Kaviar */;
+			targetProxy = FFE85C3C1CEA7E3200923B24 /* PBXContainerItemProxy */;
+		};
+		FFE85C481CEA7E3200923B24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFE85C211CEA7E3100923B24 /* Kaviar */;
+			targetProxy = FFE85C471CEA7E3200923B24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFE85C2E1CEA7E3200923B24 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE85C2F1CEA7E3200923B24 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FFE85C331CEA7E3200923B24 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFE85C341CEA7E3200923B24 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FFE85C4D1CEA7E3200923B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FFE85C4E1CEA7E3200923B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FFE85C501CEA7E3200923B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kaviar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.Kaviar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FFE85C511CEA7E3200923B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Kaviar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.Kaviar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FFE85C531CEA7E3200923B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KaviarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.KaviarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaviar.app/Kaviar";
+			};
+			name = Debug;
+		};
+		FFE85C541CEA7E3200923B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KaviarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.KaviarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kaviar.app/Kaviar";
+			};
+			name = Release;
+		};
+		FFE85C561CEA7E3200923B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KaviarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.KaviarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kaviar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FFE85C571CEA7E3200923B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KaviarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.KaviarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Kaviar;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FFE85C1D1CEA7E3100923B24 /* Build configuration list for PBXProject "Kaviar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE85C4D1CEA7E3200923B24 /* Debug */,
+				FFE85C4E1CEA7E3200923B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFE85C4F1CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "Kaviar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE85C501CEA7E3200923B24 /* Debug */,
+				FFE85C511CEA7E3200923B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFE85C521CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "KaviarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE85C531CEA7E3200923B24 /* Debug */,
+				FFE85C541CEA7E3200923B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FFE85C551CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "KaviarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFE85C561CEA7E3200923B24 /* Debug */,
+				FFE85C571CEA7E3200923B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FFE85C1A1CEA7E3100923B24 /* Project object */;
+}
