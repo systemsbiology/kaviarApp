@@ -253,7 +253,7 @@
 		{
 			NSArray* rsID = [individualVarianceDictionary objectForKey:@"rsids"];
 			
-			titleString = [NSString stringWithFormat:@"%@  %@  %@", rsID[0], retrievedChr, retrievedPos];
+			titleString = [NSString stringWithFormat:@"%@  %@  %@", retrievedChr, retrievedPos, rsID[0]];
 		}
 		else
 		{
