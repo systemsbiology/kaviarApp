@@ -40,14 +40,17 @@
 	self.coordinate.delegate = self;
 	
 	//creates colors (same as website but converted to floats from 0-1.0) and then sets colors of top four labels and submit button
-	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4];
+	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:1.0f];
 	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2];
 	self.freezeLabel.backgroundColor = backgroundColorEven;
 	self.inputLabel.backgroundColor = backgroundColorOdd;
 	self.outputLabel.backgroundColor = backgroundColorEven;
 	self.variantTypes.backgroundColor = backgroundColorOdd;
 	self.submitLabel.backgroundColor = backgroundColorEven;
+	self.titleLabel.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:1.0f];
+	self.titleLabel.opaque = true;
 	
+ 	
 	//maps specific category values to colors. used to change color of container view's tableView
 	NSArray* keyPosCategoryArray = @[@"represented", @"novel", @"suspicious"];
 	NSArray* keyVarCategoryArray = @[@"rare", @"common"];
@@ -111,6 +114,11 @@
 	return count;
 }
 
+- (CGFloat) pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component
+{
+	return 20.0f;
+}
+
 //Initialize pickerLabel if it hasn't been, then based on the row and component access the respective string and it as it's text.
 - (UIView*) pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
 {
@@ -129,8 +137,8 @@
 	
 	[pickerLabel setText:data];
 	
-	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4];
-	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2];
+	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:1.0f];
+	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:1.0f];
 	
 	//check if row is odd or even and set its color accordingly
 	if (row % 2 == 0)
