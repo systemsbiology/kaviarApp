@@ -40,14 +40,14 @@
 	self.coordinate.delegate = self;
 	
 	//creates colors (same as website but converted to floats from 0-1.0) and then sets colors of top four labels and submit button
-	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:1.0f];
+	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4f];
 	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2];
 	self.freezeLabel.backgroundColor = backgroundColorEven;
 	self.inputLabel.backgroundColor = backgroundColorOdd;
 	self.outputLabel.backgroundColor = backgroundColorEven;
 	self.variantTypes.backgroundColor = backgroundColorOdd;
 	self.submitLabel.backgroundColor = backgroundColorEven;
-	self.titleLabel.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:1.0f];
+	self.titleLabel.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.4f];
 	self.titleLabel.opaque = true;
 	
  	
@@ -137,8 +137,8 @@
 	
 	[pickerLabel setText:data];
 	
-	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:1.0f];
-	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:1.0f];
+	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4f];
+	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2f];
 	
 	//check if row is odd or even and set its color accordingly
 	if (row % 2 == 0)
