@@ -7,14 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF17F07B1CEE4A1900291A3F /* FullDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF17F07A1CEE4A1900291A3F /* FullDisplayTableViewController.m */; };
 		FFE85C271CEA7E3100923B24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C261CEA7E3100923B24 /* main.m */; };
 		FFE85C2A1CEA7E3100923B24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C291CEA7E3100923B24 /* AppDelegate.m */; };
-		FFE85C2D1CEA7E3100923B24 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C2C1CEA7E3100923B24 /* ViewController.m */; };
 		FFE85C301CEA7E3200923B24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE85C2E1CEA7E3200923B24 /* Main.storyboard */; };
 		FFE85C321CEA7E3200923B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE85C311CEA7E3200923B24 /* Assets.xcassets */; };
 		FFE85C351CEA7E3200923B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFE85C331CEA7E3200923B24 /* LaunchScreen.storyboard */; };
 		FFE85C401CEA7E3200923B24 /* KaviarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C3F1CEA7E3200923B24 /* KaviarTests.m */; };
 		FFE85C4B1CEA7E3200923B24 /* KaviarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FFE85C4A1CEA7E3200923B24 /* KaviarUITests.m */; };
+		FFF4D7AB1CECC63E003E3200 /* ParameterEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF4D7AA1CECC63E003E3200 /* ParameterEntryViewController.m */; };
+		FFF4D7B41CECE44B003E3200 /* InitialDisplayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF4D7B31CECE44B003E3200 /* InitialDisplayTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF17F0791CEE4A1900291A3F /* FullDisplayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullDisplayTableViewController.h; sourceTree = "<group>"; };
+		FF17F07A1CEE4A1900291A3F /* FullDisplayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullDisplayTableViewController.m; sourceTree = "<group>"; };
 		FFE85C221CEA7E3100923B24 /* Kaviar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kaviar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE85C261CEA7E3100923B24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FFE85C281CEA7E3100923B24 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FFE85C291CEA7E3100923B24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FFE85C2B1CEA7E3100923B24 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FFE85C2C1CEA7E3100923B24 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FFE85C2F1CEA7E3200923B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFE85C311CEA7E3200923B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE85C341CEA7E3200923B24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +53,10 @@
 		FFE85C461CEA7E3200923B24 /* KaviarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaviarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE85C4A1CEA7E3200923B24 /* KaviarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaviarUITests.m; sourceTree = "<group>"; };
 		FFE85C4C1CEA7E3200923B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFF4D7A91CECC63E003E3200 /* ParameterEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterEntryViewController.h; sourceTree = "<group>"; };
+		FFF4D7AA1CECC63E003E3200 /* ParameterEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParameterEntryViewController.m; sourceTree = "<group>"; };
+		FFF4D7B21CECE44B003E3200 /* InitialDisplayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialDisplayTableViewController.h; sourceTree = "<group>"; };
+		FFF4D7B31CECE44B003E3200 /* InitialDisplayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialDisplayTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF17F0781CEE49E500291A3F /* FullDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				FF17F0791CEE4A1900291A3F /* FullDisplayTableViewController.h */,
+				FF17F07A1CEE4A1900291A3F /* FullDisplayTableViewController.m */,
+			);
+			name = FullDisplay;
+			sourceTree = "<group>";
+		};
 		FFE85C191CEA7E3100923B24 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +101,7 @@
 				FFE85C491CEA7E3200923B24 /* KaviarUITests */,
 				FFE85C231CEA7E3100923B24 /* Products */,
 			);
+			indentWidth = 25;
 			sourceTree = "<group>";
 		};
 		FFE85C231CEA7E3100923B24 /* Products */ = {
@@ -101,11 +117,9 @@
 		FFE85C241CEA7E3100923B24 /* Kaviar */ = {
 			isa = PBXGroup;
 			children = (
-				FFE85C281CEA7E3100923B24 /* AppDelegate.h */,
-				FFE85C291CEA7E3100923B24 /* AppDelegate.m */,
-				FFE85C2B1CEA7E3100923B24 /* ViewController.h */,
-				FFE85C2C1CEA7E3100923B24 /* ViewController.m */,
-				FFE85C2E1CEA7E3200923B24 /* Main.storyboard */,
+				FF17F0781CEE49E500291A3F /* FullDisplay */,
+				FFF4D7A81CECC61E003E3200 /* Input/InitialDisplay */,
+				FFE85C581CEA7FD900923B24 /* Storyboard/Delegate */,
 				FFE85C311CEA7E3200923B24 /* Assets.xcassets */,
 				FFE85C331CEA7E3200923B24 /* LaunchScreen.storyboard */,
 				FFE85C361CEA7E3200923B24 /* Info.plist */,
@@ -138,6 +152,27 @@
 				FFE85C4C1CEA7E3200923B24 /* Info.plist */,
 			);
 			path = KaviarUITests;
+			sourceTree = "<group>";
+		};
+		FFE85C581CEA7FD900923B24 /* Storyboard/Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FFE85C281CEA7E3100923B24 /* AppDelegate.h */,
+				FFE85C291CEA7E3100923B24 /* AppDelegate.m */,
+				FFE85C2E1CEA7E3200923B24 /* Main.storyboard */,
+			);
+			name = Storyboard/Delegate;
+			sourceTree = "<group>";
+		};
+		FFF4D7A81CECC61E003E3200 /* Input/InitialDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4D7A91CECC63E003E3200 /* ParameterEntryViewController.h */,
+				FFF4D7AA1CECC63E003E3200 /* ParameterEntryViewController.m */,
+				FFF4D7B21CECE44B003E3200 /* InitialDisplayTableViewController.h */,
+				FFF4D7B31CECE44B003E3200 /* InitialDisplayTableViewController.m */,
+			);
+			name = Input/InitialDisplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +242,7 @@
 				TargetAttributes = {
 					FFE85C211CEA7E3100923B24 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = AW3GD4RB5G;
 					};
 					FFE85C3A1CEA7E3200923B24 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -270,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFE85C2D1CEA7E3100923B24 /* ViewController.m in Sources */,
+				FFF4D7AB1CECC63E003E3200 /* ParameterEntryViewController.m in Sources */,
 				FFE85C2A1CEA7E3100923B24 /* AppDelegate.m in Sources */,
+				FFF4D7B41CECE44B003E3200 /* InitialDisplayTableViewController.m in Sources */,
+				FF17F07B1CEE4A1900291A3F /* FullDisplayTableViewController.m in Sources */,
 				FFE85C271CEA7E3100923B24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -411,10 +449,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Kaviar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.Kaviar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.srivastavatapan.Kaviar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -422,10 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Kaviar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tapansrivastava.Kaviar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.srivastavatapan.Kaviar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,6 +541,7 @@
 				FFE85C511CEA7E3200923B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFE85C521CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "KaviarTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +550,7 @@
 				FFE85C541CEA7E3200923B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFE85C551CEA7E3200923B24 /* Build configuration list for PBXNativeTarget "KaviarUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +559,7 @@
 				FFE85C571CEA7E3200923B24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
