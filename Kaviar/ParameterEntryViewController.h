@@ -35,6 +35,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *variantTypes;
 @property (strong, nonatomic) IBOutlet UIButton *submitLabel;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UIButton *helpLabel;
 
 - (IBAction)submit:(id)sender;
 

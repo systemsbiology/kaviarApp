@@ -13,10 +13,13 @@
 @end
 
 @implementation FullDisplayTableViewController
-
+{
+	bool lastWasVar;
+	UIColor *lastColor;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+	lastWasVar = false;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -52,41 +55,42 @@
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	NSString* cellTitle = [self.fullCellTitles objectAtIndex:indexPath.row];
-		
-	if (cellTitle.length > 1000)
+	
+	if (cellTitle.length < 50)
 	{
-		return 1000.0f;
+		return 44.0f;
+	}
+		
+	CGFloat width = [UIScreen mainScreen].bounds.size.width;
+	
+	float lengthPerLines = 60.0f;
+	
+	if (width == 414)
+	{
+		lengthPerLines = 110.0f;
+	}
+	else if (width == 375)
+	{
+		lengthPerLines = 105.0f;
+	}
+	else if (width == 320)
+	{
+		lengthPerLines = 95.0f;
+	}
+	
+	if (cellTitle.length > 900)
+	{
+		lengthPerLines = 125.0f;
 	}
 	else if (cellTitle.length > 750)
 	{
-		return 800.0f;
+		lengthPerLines = 150.0f;
 	}
-	else if (cellTitle.length > 500)
-	{
-		return 600.0f;
-	}
-	else if (cellTitle.length > 250)
-	{
-		return 450.0f;
-	}
-	else if (cellTitle.length > 100)
-	{
-		return 315.0f;
-	}
-	else if (cellTitle.length > 80)
-	{
-		return 250.0f;
-	}
-	else if (cellTitle.length > 60)
-	{
-		return 175.0f;
-	}
-	else if (cellTitle.length > 40)
-	{
-		return 100.0f;
-	}
+
+	float rowsPerCell = (float)cellTitle.length / lengthPerLines;
+	float cellHeight = rowsPerCell * 44.0f;
 	
-	return 44.0f;
+	return cellHeight;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -97,84 +101,75 @@
 	
 	if (self.fullCellTitles && self.fullCellTitles.count != 0)
 	{
-		NSString* cellTitle = [self.fullCellTitles objectAtIndex:indexPath.row];
-		//change font size scaling and number of lines text can appear on based on length of string
-		if (cellTitle.length > 1000)
-		{
-			cell.textLabel.numberOfLines = 195;
-			cell.textLabel.minimumScaleFactor = 0.5f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
-		}
-		else if (cellTitle.length > 750)
-		{
-			cell.textLabel.numberOfLines = 145;
-			cell.textLabel.minimumScaleFactor = 0.5f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
-		}
-		else if (cellTitle.length > 500)
-		{
-			cell.textLabel.numberOfLines = 95;
-			cell.textLabel.minimumScaleFactor = 0.5f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
-		}
-		else if (cellTitle.length > 250)
-		{
-			cell.textLabel.numberOfLines = 45;
-			cell.textLabel.minimumScaleFactor = 0.5f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
-		}
-		else if (cellTitle.length > 100)
-		{
-			cell.textLabel.numberOfLines = 15;
-			cell.textLabel.minimumScaleFactor = 0.6f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
-		}
-		else if (cellTitle.length > 80)
-		{
-			cell.textLabel.numberOfLines = 11;
-			cell.textLabel.minimumScaleFactor = 0.7f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
-		}
-		else if (cellTitle.length > 60)
-		{
-			cell.textLabel.numberOfLines = 7;
-			cell.textLabel.minimumScaleFactor = 0.8f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
+		[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 
-		}
-		else if (cellTitle.length > 40)
+		NSString* cellTitle = [self.fullCellTitles objectAtIndex:indexPath.row];
+		
+		cell.textLabel.numberOfLines = 0;
+
+		if (cellTitle.length < 750)
 		{
-			cell.textLabel.numberOfLines = 3;
-			cell.textLabel.minimumScaleFactor = 0.9f;
-			cell.textLabel.adjustsFontSizeToFitWidth = true;
+			UIFont *normalFont = [UIFont fontWithName:@"HelveticaNeue" size:14];
+			cell.textLabel.font = normalFont;
+		}
+		else if (cellTitle.length < 900)
+		{
+			UIFont *condensedFont = [UIFont fontWithName:@"HelveticaNeue" size:11];
+			cell.textLabel.font = condensedFont;
+		}
+		else
+		{
+			UIFont *superCondensedFont = [UIFont fontWithName:@"HelveticaNeue" size:9];
+			cell.textLabel.font = superCondensedFont;
+		}
+		
+		
+		UIColor *backgroundColor1 = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4];
+		UIColor *backgroundColor2 = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2];
+
+		if (indexPath.row == 0)
+		{
+			lastWasVar = false;
+			cell.backgroundColor = backgroundColor1;
+			lastColor = backgroundColor1;
+		}
+		else
+		{
+			if (lastWasVar == true)
+			{
+				cell.backgroundColor = lastColor;
+				lastWasVar = false;
+			}
+			else
+			{
+				if ([lastColor isEqual:backgroundColor1])
+				{
+					cell.backgroundColor = backgroundColor2;
+					lastColor = backgroundColor2;
+				}
+				else
+				{
+					cell.backgroundColor = backgroundColor1;
+					lastColor = backgroundColor1;
+				}
+
+				if ([cellTitle containsString:@"Variant:"])
+				{
+					lastWasVar = true;
+				}
+			}
 		}
 
 		cell.textLabel.text = cellTitle;
 	}
 	else
 	{
+		[self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleSingleLine];
+
+		cell.backgroundColor = [UIColor whiteColor];
 		cell.textLabel.text = @"No Data Inputted. Please Try Again.";
 	}
 	
-	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4];
-	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2];
-	
-	if ([self tableView:self.tableView numberOfRowsInSection:1] == 1)
-	{
-    
-		cell.backgroundColor = [UIColor whiteColor];
-	}
-	else
-	{
-		if (indexPath.row % 2 == 0)
-		{
-			cell.backgroundColor = backgroundColorEven;
-		}
-		else
-		{
-			cell.backgroundColor = backgroundColorOdd;
-		}
-	}
 	cell.selectionStyle = UITableViewCellSelectionStyleNone;
 	
     return cell;

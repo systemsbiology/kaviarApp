@@ -68,6 +68,7 @@
 {
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 	static NSString* CellIdentifier = @"cell";
@@ -76,9 +77,8 @@
 	if (cell == nil)
 	{
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
-	
 	}
-
+	
 	if (self.fullJSONResult)
 	{
 		//no black lines between tableViewCells
@@ -255,7 +255,7 @@
 					{
 						frequencyDisplay = [NSString stringWithFormat:@"%.02f%%", frequencyFloat];
 					}
-					NSString* varFreq = [NSString stringWithFormat:@"Variant: %@   Frequency: %@\nCategory: %@", variant, frequencyDisplay, varCategory];
+					NSString* varFreq = [NSString stringWithFormat:@"Variant: %@   Frequency: %@ \nCategory: %@", variant, frequencyDisplay, varCategory];
 					NSString* sources = [[variantArray objectAtIndex:k] objectForKey:@"sources"];
 					
 					NSString* displaySources = [NSString stringWithFormat:@"Sources: %@", sources];

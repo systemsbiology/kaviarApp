@@ -38,19 +38,21 @@
 	self.displayPicker.delegate = self;
 	self.chrNumber.delegate = self;
 	self.coordinate.delegate = self;
-	
-	//creates colors (same as website but converted to floats from 0-1.0) and then sets colors of top four labels and submit button
+
+	//creates colors (same as website but converted to floats from 0-1.0) and then sets colors of top four labels, title label, the help button, and submit button
 	UIColor *backgroundColorEven = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.4f];
 	UIColor *backgroundColorOdd = [UIColor colorWithRed:0 green:0.247 blue:0.447 alpha:0.2];
+	self.titleLabel.backgroundColor = [UIColor whiteColor];
 	self.freezeLabel.backgroundColor = backgroundColorEven;
 	self.inputLabel.backgroundColor = backgroundColorOdd;
 	self.outputLabel.backgroundColor = backgroundColorEven;
 	self.variantTypes.backgroundColor = backgroundColorOdd;
 	self.submitLabel.backgroundColor = backgroundColorEven;
-	self.titleLabel.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.4f];
-	self.titleLabel.opaque = true;
-	
+	self.helpLabel.backgroundColor = backgroundColorEven;
  	
+	//text color for both buttons is white
+	[self.submitLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+	[self.helpLabel setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	//maps specific category values to colors. used to change color of container view's tableView
 	NSArray* keyPosCategoryArray = @[@"represented", @"novel", @"suspicious"];
 	NSArray* keyVarCategoryArray = @[@"rare", @"common"];
@@ -298,10 +300,12 @@
 			{
 				NSString* variant = [[variantArray objectAtIndex:k] objectForKey:@"variant"];
 				NSString* frequency = [[variantArray objectAtIndex:k] objectForKey:@"frequency"];
+				NSString* sources = [[variantArray objectAtIndex:k] objectForKey:@"sources"];
 				NSString* varCategory = [[variantArray objectAtIndex:k] objectForKey:@"varCategory"];
 				float frequencyFloat = [frequency floatValue];
 				frequencyFloat = frequencyFloat * 100;
 				NSString* frequencyDisplay;
+				NSString* variantOrRef;
 				
 				if (frequencyFloat - 1 < 0)
 				{
@@ -316,7 +320,16 @@
 					frequencyDisplay = [NSString stringWithFormat:@"%.02f%%", frequencyFloat];
 				}
 				
-				NSString* varFreq = [NSString stringWithFormat:@"Variant: %@   Frequency: %@", variant, frequencyDisplay];
+				//identify on initial display which variant is the reference
+				if ([sources containsString:@"reference"])
+				{
+					variantOrRef = @"Reference";
+				}
+				else
+				{
+					variantOrRef = @"Variant";
+				}
+				NSString* varFreq = [NSString stringWithFormat:@"%@: %@   Frequency: %@", variantOrRef, variant, frequencyDisplay];
 				UIColor* varFreqBackgroundColor = [self.varCategoryToColor objectForKey:varCategory];
 				
 				[parsedJSONArray addObject:varFreq];
@@ -550,7 +563,6 @@
 
 		});
 	}
-
 }
 
 #pragma mark - Parameter Check
@@ -613,7 +625,6 @@
 	}];
 	//then set paramater string to new string without duplicates.
 	posString = removeDuplicatePos;
-
 }
 
 //checks if the range is valid and adds a message to error log if it isn't. Returns false if range is invalid
