@@ -94,7 +94,7 @@
 //Freeze, input, output, variant type each has one component
 - (NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
-	return 4;
+	return displayPickerArray.count;
 }
 
 //Access the array of values for each component. Then return the length of that array.

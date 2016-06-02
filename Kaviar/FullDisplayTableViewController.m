@@ -105,7 +105,7 @@
 
 		NSString* cellTitle = [self.fullCellTitles objectAtIndex:indexPath.row];
 		
-		cell.textLabel.numberOfLines = 0;
+		cell.textLabel.numberOfLines = 50;
 
 		if (cellTitle.length < 750)
 		{
@@ -138,7 +138,10 @@
 			if (lastWasVar == true)
 			{
 				cell.backgroundColor = lastColor;
-				lastWasVar = false;
+				if ([cellTitle containsString:@"Sources"])
+				{
+					lastWasVar = false;
+				}
 			}
 			else
 			{
@@ -153,7 +156,7 @@
 					lastColor = backgroundColor1;
 				}
 
-				if ([cellTitle containsString:@"Variant:"])
+				if ([cellTitle containsString:@"Variant:"] || [cellTitle containsString:@"Frequency"] || [cellTitle containsString:@"Category"])
 				{
 					lastWasVar = true;
 				}

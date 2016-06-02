@@ -255,12 +255,17 @@
 					{
 						frequencyDisplay = [NSString stringWithFormat:@"%.02f%%", frequencyFloat];
 					}
-					NSString* varFreq = [NSString stringWithFormat:@"Variant: %@   Frequency: %@ \nCategory: %@", variant, frequencyDisplay, varCategory];
+					NSString* varString = [NSString stringWithFormat:@"Variant: %@", variant];
+					NSString* freqString = [NSString stringWithFormat:@"Frequency: %@", frequencyDisplay];
+					NSString* catString = [NSString stringWithFormat:@"Category: %@", varCategory];
+
 					NSString* sources = [[variantArray objectAtIndex:k] objectForKey:@"sources"];
 					
 					NSString* displaySources = [NSString stringWithFormat:@"Sources: %@", sources];
 				
-					[fullDisplayCellTitles addObject:varFreq];
+					[fullDisplayCellTitles addObject:varString];
+					[fullDisplayCellTitles addObject:freqString];
+					[fullDisplayCellTitles addObject:catString];
 					[fullDisplayCellTitles addObject:displaySources];
 				}
 			}
