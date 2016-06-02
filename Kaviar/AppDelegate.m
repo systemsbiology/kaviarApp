@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ParameterEntryViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,7 +17,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+	dispatch_async(dispatch_get_main_queue(), ^{
+		[(UINavigationController*)self.window.rootViewController setDelegate:self];
+	});
     return YES;
+}
+
+- (void) navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+	[navigationController setNavigationBarHidden:([viewController isKindOfClass:[ParameterEntryViewController class]]) animated:animated];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

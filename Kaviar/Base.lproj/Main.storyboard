@@ -9,7 +9,7 @@
         <!--Navigation Controller-->
         <scene sceneID="HyO-MH-nGP">
             <objects>
-                <navigationController id="JPk-dt-6Mi" sceneMemberID="viewController">
+                <navigationController extendedLayoutIncludesOpaqueBars="YES" id="JPk-dt-6Mi" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Wvp-63-hA6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

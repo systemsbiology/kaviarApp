@@ -71,18 +71,6 @@
 	self.varCategoryToColor = [NSDictionary dictionaryWithObjects:valueVarColorArray forKeys:keyVarCategoryArray];
 }
 
-//showing the navigation controller on the parameter page wasted space. This hides it when parameter page is about to appear.
-- (void) viewWillAppear:(BOOL)animated
-{
-	self.navigationController.navigationBarHidden = true;
-}
-
-//navigation controller necessary on next page to navigate back, so when segue occurs and this view disspears, navigation controller reappears.
-- (void) viewWillDisappear:(BOOL)animated
-{
-	self.navigationController.navigationBarHidden = false;
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
